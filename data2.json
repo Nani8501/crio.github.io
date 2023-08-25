@@ -1,0 +1,315 @@
+[
+  {
+    "name": "Binary Search",
+    "backgroundImage": "bgSearchlight.jpg",
+    "specifications": {
+      "spe": "Binary Search is an efficient searching algorithm used to find a specific element in a sorted list of elements. It works by repeatedly dividing the search space in half until the target element is found or the search space is empty",
+      "spec1": "Algorithm Paradigm: Binary Search",
+      "spec2": "Time Complexity : O(log n)",
+      "spec3": "Space Complexity : O(1)"
+    },
+    "card": "Complexity of Binary Search",
+    "complexity": {
+      "time": "The time complexity of Binary Search is O(log n) because with each comparison, the search space is halved. This results in a very efficient search algorithm for sorted lists as the number of elements grows.",
+      "space": "Binary Search has a space complexity of O(1) because it only requires a constant amount of additional space to store variables (e.g., indices). The space used does not depend on the size of the input list, making it an in-place algorithm."
+    },
+    "explanation": "Binary Search works by dividing the sorted list into two halves and compares the middle element with the target element. If the middle element is equal to the target, the search is successful. If the target is less than the middle element, the search is confined to the left half, and if the target is greater, the search is confined to the right half. The process continues until the target element is found or the search space is empty.",
+    "code": {
+      "c": "Assets\\code\\BinarySearch.c",
+      "java": "Assets\\code\\BinarySearch.java",
+      "python": "Assets\\code\\Binarysearch.py"
+    }
+  },
+
+  {
+    "name": "Bubble Sort",
+    "backgroundImage": "bgSort.jpg",
+    "specifications": {
+      "spe": "Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted",
+      "spec1": "AlgorithmParadigm : Bubble Sort",
+      "spec2": "SortinginPlace : Yes",
+      "spec3": "Stable : Yes"
+    },
+    "card": "Complexity of Bubble Sort",
+    "complexity": {
+      "time": "Best Case: O(n) \\nAverage Case: O(n^2) \\nWorst Case: O(n^2)",
+      "space": "Bubble Sort has a space complexity of O(1) because it only requires a constant amount of extra space to store temporary variables used during swapping."
+    },
+    "explanation": "Bubble Sort works by repeatedly stepping through the list of elements to be sorted and comparing adjacent elements. If they are in the wrong order, they are swapped. This process is repeated until the list is fully sorted, and no more swaps are needed.",
+    "code": {
+      "c": "Assets\\code\\Bubblesort.c",
+      "java": "Assets\\code\\Bubblesort.java",
+      "python": "Assets\\code\\Bubblesort.py"
+    }
+  },
+
+  {
+    "name": "Depth-First Search",
+    "backgroundImage": "bgSearchlight.jpg",
+    "specifications": {
+      "spe": "Depth-First Search (DFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the root node and explores as far as possible along each branch before backtracking.",
+      "spec1": "Algorithm Paradigm: Depth-First Search (DFS)",
+      "spec2": "Traversal Type: Depth-First",
+      "spec3": "."
+    },
+    "card": "Complexity of Depth-First Search",
+    "complexity": {
+      "time": "The time complexity of Depth-First Search (DFS) depends on the data structure used to represent the graph or tree. In the case of an adjacency list representation:<ul><li>Time Complexity: O(V + E)</li></ul>Where V is the number of vertices and E is the number of edges in the graph.",
+      "space": "Depth-First Search (DFS) has a space complexity of O(V) as it requires space proportional to the number of vertices in the graph to maintain the visited nodes and the recursion stack."
+    },
+    "explanation": "Depth-First Search (DFS) starts at the root node and explores as far as possible along each branch before backtracking. It follows a depth-first order, meaning it explores as far as possible along a branch before backtracking to the previous node and exploring other branches.",
+    "code": {
+      "c": "Assets\\code\\DFS.c",
+      "java": "Assets\\code\\DFS.java",
+      "python": "Assets\\code\\DFS.py"
+    }
+  },
+
+  {
+    "name": "Doubly Linked List",
+    "backgroundImage": "bgLinkedlight.jpg",
+    "specifications": {
+      "spe": "A Doubly Linked List is a linear data structure that consists of a sequence of elements, each containing a data field and two links (pointers) to the previous and next elements in the list. It allows efficient insertion, deletion, and traversal of elements.",
+      "spec1": "Insertion:In a Doubly Linked List, elements can be inserted at the beginning, end, or at a specific position in the list. The insertion process involves updating the pointers of the neighboring nodes to maintain the doubly linked structure.",
+      "spec2": "Deletion:Deletion in a Doubly Linked List involves removing an element from the list. It requires updating the pointers of the neighboring nodes to maintain the doubly linked structure after the deletion operation.",
+      "spec3": "Traversal:Traversing a Doubly Linked List involves visiting each element in the list one by one. Starting from the head (or tail), each element can be accessed using the next and previous pointers."
+    },
+    "card": "Doubly Linked List Complexity",
+    "complexity": {
+      "time": "Insert at beginning or end O(1) \\nDelete at beginning or end O(1)  \\nSearch O(n)  \\nAccess O(n)",
+      "space": "Space complexity: Θ(1)"
+    },
+    "explanation": "A dynamic link library (DLL) is a collection of small programs that larger programs can load when needed to complete specific tasks. The small program, called a DLL file, contains instructions that help the larger program handle what may not be a core function of the original program.",
+    "code": {
+      "c": "Assets\\code\\DoublyLinkedList.c",
+      "java": "Assets\\code\\DoublyLinkedList.java",
+      "python": "Assets\\code\\DoublyLinkedList.py"
+    }
+  },
+
+  {
+    "name": "Deletion in Doubly Linked List",
+    "backgroundImage": "bgLinkedlight.jpg",
+
+    "specifications": {
+      "spe": "Deletion in a Doubly Linked List involves removing a node from the list. It requires updating the previous and next pointers of the neighboring nodes to maintain the integrity of the linked list",
+      "spec1": "At the front of the DLL.",
+      "spec2": "In between two nodes\\nAfter a given node.\\nBefore a given node.",
+      "spec3": "At the end of the DLL."
+    },
+    "card": "Deletion in Doubly Linked List Complexity",
+    "complexity": {
+      "time": "Delete at beginning or end O(1)",
+      "space": "Space complexity: Θ(1)"
+    },
+    "explanation": "While deletion in doubly linked list a node temp , we should take care about the links present between the nodes. the node temp which we want to delete, the immediate previous node to temp and the immediate next node of the temp by changing the next of the previous node of temp as the next of temp and the previous of the next node of temp as the previous of temp.\\ntemp→next→prev = temp→prev\\n temp→prev→next = temp→next \\ndelete(temp)",
+    "code": {
+      "c": "Assets\\code\\DD.c",
+      "java": "Assets\\code\\DD.java",
+      "python": "Assets\\code\\DD.py"
+    }
+  },
+
+  {
+    "name": "Insertion in Doubly Linked List",
+    "backgroundImage": "bgLinkedlight.jpg",
+
+    "specifications": {
+      "spe": "Inserting a new node in a doubly linked list is very similar to inserting new node in linked list. There is a little extra work required to maintain the link of the previous node. A node can be inserted in a Doubly Linked List in four ways:",
+      "spec1": "At the front of the DLL.",
+      "spec2": "In between two nodes\\nAfter a given node.\\nBefore a given node.",
+      "spec3": "At the end of the DLL."
+    },
+    "card": "Insertion in Doubly Linked List Complexity",
+    "complexity": {
+      "time": "Insert at beginning or end O(1)",
+      "space": "Space complexity: Θ(1)"
+    },
+    "explanation": "A node can be added in 3 ways in the doubly linked list:\\nAt the front of the DLL.\\nAfter a Given Node.\\nAt the end of the DLL.",
+    "code": {
+      "c": "Assets\\code\\DI.c",
+      "java": "Assets\\code\\DI.java",
+      "python": "Assets\\code\\DI.py"
+    }
+  },
+
+  {
+    "name": "Insertion Sort",
+    "backgroundImage": "bgSort.jpg",
+
+    "specifications": {
+      "spe": "Insertion Sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as Quick Sort or Merge Sort, but it performs well for small lists and is typically faster than Bubble Sort.",
+      "spec1": "Algorithm Paradigm: Insertion Sort",
+      "spec2": "Sorting in Place: Yes",
+      "spec3": "Stable: Yes"
+    },
+    "card": "Complexity of Insertion Sort",
+    "complexity": {
+      "time": "The time complexity of Insertion Sort is as follows \\n  Best Case: O(n)\\n  Average Case: O(n^2)\\n  Worst Case: O(n^2)",
+      "space": "Insertion Sort has a space complexity of O(1) because it only requires a constant amount of extra space to store temporary variables used during swapping."
+    },
+    "explanation": "Insertion Sort works by dividing the input array into two parts: the sorted part on the left and the unsorted part on the right. Initially, the sorted part contains the first element of the array, and the rest of the array is unsorted. The algorithm then iterates through the unsorted part, taking one element at a time, and inserts it into its correct position in the sorted part by shifting elements if necessary.",
+    "code": {
+      "c": "Assets\\code\\Insertionsort.c",
+      "java": "Assets\\code\\Insertionsort.java",
+      "python": "Assets\\code\\Insertionsort.py"
+    }
+  },
+
+  {
+    "name": "Linear Search",
+    "backgroundImage": "bgSearchlight.jpg",
+    "specifications": {
+      "spe": "Linear Search, also known as Sequential Search, is a simple searching algorithm used to find a specific element in a list of elements. It sequentially checks each element of the list until a match is found or the whole list has been searched.",
+      "spec1": "Algorithm Paradigm: Linear Search",
+      "spec2": "Time Complexity: O(n)",
+      "spec3": "Space Complexity: O(1)"
+    },
+    "card": "Complexity of Linear Search",
+    "complexity": {
+      "time": "The time complexity of Linear Search is O(n) because it examines each element in the list until it finds the target element or reaches the end of the list. In the worst-case scenario, it may need to traverse the entire list, resulting in a linear time complexity.",
+      "space": "Linear Search has a space complexity of O(1) because it requires a constant amount of additional space to store variables (e.g., index, target). The space used does not depend on the size of the input list, making it an in-place algorithm."
+    },
+    "explanation": "Linear Search starts from the beginning of the list and compares each element with the target element until a match is found or the end of the list is reached. If the target element is found, the search terminates with the index of the element. If the target element is not present in the list, the search will continue until the end of the list, and a 'not found' result will be returned.",
+    "code": {
+      "c": "Assets\\code\\LinearSearch.c",
+      "java": "Assets\\code\\LinearSearch.java",
+      "python": "Assets\\code\\LinearSearch.py"
+    }
+  },
+
+  {
+    "name": "Merge Sort",
+    "backgroundImage": "bgSort.jpg",
+    "specifications": {
+      "spe": "Merge Sort is a divide-and-conquer sorting algorithm that divides the input array into two halves, sorts each half, and then merges them to produce a sorted output. It is a stable sorting algorithm and has a guaranteed time complexity of O(n log n) for all cases.",
+      "spec1": "Algorithm Paradigm: Merge Sort",
+      "spec2": "Sorting in Place: No",
+      "spec3": "Stable: Yes"
+    },
+    "card": "Complexity of Merge Sort",
+    "complexity": {
+      "time": "The time complexity of Merge Sort is as follows:\\n  Best Case: O(n log n)\\n  Average Case: O(n log n)\\n  Worst Case: O(n log n)",
+      "space": "Merge Sort has a space complexity of O(n) as it requires additional space to store temporary arrays during the merging process. However, this space requirement can be reduced to O(1) by implementing an in-place variant of Merge Sort."
+    },
+    "explanation": "Merge Sort divides the unsorted array into two halves, recursively sorts each half, and then merges the two sorted halves back together to produce the final sorted array. The merging process is the key step in Merge Sort, and it involves comparing elements from both halves and placing them in the correct order. This process continues until the entire array is sorted.",
+    "code": {
+      "c": "Your C code here",
+      "java": "Your Java code here",
+      "python": "Your Python code here"
+    }
+  },
+
+  {
+    "name": "Quick Sort",
+    "backgroundImage": "bgSort.jpg",
+    "specifications": {
+      "spe": "Quick Sort is a sorting algorithm that follows the divide-and-conquer approach to sort an array.",
+      "spec1": "Algorithm Paradigm: Divide and Conquer",
+      "spec2": "Sorting in Place: No (but can be modified to sort in-place)",
+      "spec3": "Stable: No"
+    },
+    "card": "Complexity of Quick Sort",
+    "complexity": {
+      "time": "The time complexity of Quick Sort depends on the choice of the pivot element.\\\n  Best Case: O(n log n)\\n  Average Case: O(n log n)\\n  Worst Case: O(n^2)\\nThe worst-case time complexity occurs when the pivot is chosen as the smallest or largest element in every partition, leading to unbalanced partitions.\\n However, with a good pivot selection strategy (e.g., choosing the median element), the algorithm's performance improves significantly.",
+      "space": "Quick Sort has a space complexity of O(log n) for the recursive call stack.\\nThe partitioning process requires a constant amount of extra space.\\nTherefore, the overall space complexity is considered as O(log n)."
+    },
+    "explanation": "Quick Sort works by selecting a pivot element from the array and partitioning the other elements into two sub-arrays,\\naccording to whether they are less than or greater than the pivot. The pivot element is then placed in its correct position.\\nThis process is recursively applied to the sub-arrays on the left and right of the pivot until the entire array is sorted.\\nThe choice of the pivot element and its positioning greatly influence the algorithm's performance.",
+    "code": {
+      "c": "Your C code here",
+      "java": "Your Java code here",
+      "python": "Your Python code here"
+    }
+  },
+
+  {
+    "name": "Selection Sort",
+    "backgroundImage": "bgSort.jpg",
+    "specifications": {
+      "spe": "Selection Sort is a simple sorting algorithm that sorts an array by repeatedly finding the minimum element from the unsorted part of the array and swapping it with the first unsorted element.",
+      "spec1": "Algorithm Paradigm: Selection Sort",
+      "spec2": "Sorting in Place: Yes",
+      "spec3": "Stable: No"
+    },
+    "card": "Complexity of Selection Sort",
+    "complexity": {
+      "time": "The time complexity of Selection Sort is as follows:\\n  Best Case: O(n^2)\\n  Average Case: O(n^2) \\n  Worst Case: O(n^2)",
+      "space": "Selection Sort has a space complexity of O(1) because it only requires a constant amount of extra space to store temporary variables used during swapping."
+    },
+    "explanation": "Selection Sort works by dividing the input array into two parts: the sorted part on the left and the unsorted part on the right. Initially, the sorted part is empty, and the entire array is unsorted. The algorithm repeatedly selects the minimum element from the unsorted part and swaps it with the first element of the unsorted part. This process continues until the entire array is sorted.",
+    "code": {
+      "c": "Your C code here",
+      "java": "Your Java code here",
+      "python": "Your Python code here"
+    }
+  },
+
+  {
+    "name": "Singly Linked List",
+    "backgroundImage": "bgLinkedlight.jpg",
+
+    "specifications": {
+      "spe": "A Singly Linked List is a linear data structure consisting of a sequence of elements, where each element points to the next element in the list. It allows efficient insertion and deletion of elements at the beginning and end of the list. \\n Operations on Singly Linked List:",
+      "spec1": "Insertion at the Beginning:To insert an element at the beginning of a Singly Linked List, create a new node with the data to be inserted and set its 'next' pointer to the current head of the list. Then, update the head to point to the new node. This operation takes constant time, O(1). \\n Insertion at the End: To insert an element at the end of a Singly Linked List, first, traverse the list to find the last node. Then, create a new node with the data to be inserted and set the 'next' pointer of the last node to point to the new node. This operation takes linear time, O(n).",
+      "spec2": "Deletion at the Beginning:To delete the first element from a Singly Linked List, simply update the head to point to the second node in the list. The first node becomes disconnected and will be automatically garbage collected in languages with automatic memory management. This operation takes constant time, O(1).  \\n Deletion at the End:To delete the last element from a Singly Linked List, first, traverse the list to find the second-to-last node. Then, set the 'next' pointer of the second-to-last node to NULL, making it the new tail of the list. The last node becomes disconnected and will be automatically garbage collected in languages with automatic memory management. This operation takes linear time, O(n).",
+      "spec3": "Searching and Accesing Nodes"
+    },
+    "card": "Singly Linked List Complexity",
+    "complexity": {
+      "time": "For insertion in the linked list, the time complexity is O(1) if done on the head, O(N) if done at any other location \\n For deletion, the time complexity is O(1), if done on the head, O(N), if done at any other location, as we need to reach that location by traversing the linked list. \\n For searching and accessing any elements, the involved time complexity is O(N).",
+      "space": "Space complexity for each operation in a linked list is O(1), as no extra space is required for any operation."
+    },
+    "explanation": "A singly linked list is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail).\\n Each element in a linked list is called a node. A single node contains data and a pointer to the next node which helps in maintaining the structure of the list. \\n The first node is called the head; it points to the first node of the list and helps us access every other element in the list. The last node, also sometimes called the tail, points to NULL which helps us in determining when the list ends.",
+    "code": {
+      "c": "Your C code here",
+      "java": "Your Java code here",
+      "python": "Your Python code here"
+    }
+  },
+
+  {
+    "name": "Deletion in Singly Linked List",
+    "backgroundImage": "bgLinkedlight.jpg",
+
+    "specifications": {
+      "spe": "Deletion in a Singly Linked List involves removing a node from the list. There are several cases to consider while performing deletion, such as deletion of the first node, deletion of the last node, and deletion of a node in the middle of the list.",
+      "spec1": "At the front of the SLL.",
+      "spec2": "In between two nodes\\nAfter a given node.\\nBefore a given node.",
+      "spec3": "At the end of the SLL."
+    },
+    "card": "Complexity of Singly Linked List",
+    "complexity": {
+      "time": "Deletion from the beginning: Time Complexity: O(1) \\n Deletion from the end: Time Complexity: O(N) \\n Delete from the middle of a linked list :Time Complexity: O(N)",
+      "space": "O(1)"
+    },
+    "explanation": "First case: When we have the pointer pointing to the node which needs to be deleted, let’s call it prev. So, we have to do, \\n   curr = prev->next \\n   prev->next = curr->next \\n  curr->next = NULL \\n   delete curr \\n Since curr is the node that is deleted from the singly linked list. \\n Second case: When we have to delete the first/start/head node, let’s call it head. So, we have to do, \\n   head = head->next \\n Hence head is pointing to the next node. \\n Third case: When we have to delete the last/end/tail node, let’s call it tail. So, we have to do, \\n   tail = NULL",
+    "code": {
+      "c": "Your C code here",
+      "java": "Your Java code here",
+      "python": "Your Python code here"
+    }
+  },
+
+  {
+    "name": "Insertion in Singly Linked List",
+    "backgroundImage": "bgLinkedlight.jpg",
+
+    "specifications": {
+      "spe": "Insertion in a Singly Linked List involves inserting a node in the list.",
+      "spec1": "At the front of the SLL.",
+      "spec2": "In between two nodes\\nAfter a given node.\\nBefore a given node.",
+      "spec3": "At the end of the SLL."
+    },
+    "card": "Complexity of Singly Linked List",
+    "complexity": {
+      "time": "O(√N * N)",
+      "space": "O(1)"
+    },
+    "explanation": "To insert a node at the start/beginning/front of a Linked List, we need to: \\n Make the first node of Linked List linked to the new node \\n Remove the head from the original first node of Linked List \\n Make the new node as the Head of the Linked List.",
+    "code": {
+      "c": "Your C code here",
+      "java": "Your Java code here",
+      "python": "Your Python code here"
+    }
+  }
+]
